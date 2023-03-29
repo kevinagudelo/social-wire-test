@@ -1,0 +1,17 @@
+<div class="full-container">
+  <app-header></app-header>
+  <div class="container">
+    <h2>My Messages</h2>
+    <form class="form" [formGroup]="myMessageForm" (ngSubmit)="onMyMessage()">
+      <div class="form-row">
+        <div class="form-group col-xs-12 mb-3">
+          <label for="inputEmail4">Date</label>
+          <input formControlName="date" type="text" class="form-control" />
+        </div>
+      </div>
+    </form>
+    <div *ngFor="let message of messages">
+      <app-card [message]="message"></app-card>
+    </div>
+  </div>
+</div>

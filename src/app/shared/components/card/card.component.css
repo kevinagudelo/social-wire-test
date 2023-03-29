@@ -1,0 +1,18 @@
+.container {
+  background: gainsboro;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 15px 0;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #555555;
+}
+
+

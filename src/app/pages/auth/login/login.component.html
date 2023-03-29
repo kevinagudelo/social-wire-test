@@ -1,0 +1,40 @@
+<div class="container-login">
+  <div class="body">
+    <div class="container-img-login">
+      <div >
+        <img src="../../../../assets/img/image 2.png" height="120px" alt="">
+
+      </div>
+
+      <img class="img-float-login" width="240px" src="../../../../assets/img/Group 2.png" alt="">
+      <h1 class="h1-img"> Welcome To Wires </h1>
+    </div>
+
+    <h1>Sign Up</h1>
+    <form class="form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div>
+        <div>
+          <label for="inputEmail4">Username</label>
+          <input
+            formControlName="username"
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Username"
+          />
+        </div>
+        <div>
+          <label for="inputPassword4">Password</label>
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control"
+            id="inputPassword4"
+            placeholder="Password"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn">Sign in</button>
+    </form>
+  </div>
+</div>

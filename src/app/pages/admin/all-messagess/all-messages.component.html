@@ -1,0 +1,24 @@
+<div class="full-container">
+  <app-header></app-header>
+  <div class="container">
+    <h2>All Messages</h2>
+    <form class="form" [formGroup]="allMessageForm" (ngSubmit)="onAllMessages()">
+      <div class="form-row">
+
+        <div class="form-group "  >
+          <label for="inputEmail4">What search</label>
+          <input formControlName="search" type="text" class="form-control" id="inputEmail4" placeholder="title">
+        </div>
+        <div class="form-group ">
+          <label for="inputPassword4">Date select</label>
+          <input formControlName="date" type="text" class="form-control" id="inputPassword4" placeholder="messagge">
+        </div>
+      </div>
+
+      </form>
+      <div *ngFor="let message of messages">
+        <app-card [message]="message" ></app-card>
+      </div>
+  </div>
+
+</div>

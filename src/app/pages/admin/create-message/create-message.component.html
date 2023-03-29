@@ -1,0 +1,40 @@
+<div class="full-container">
+  <app-header></app-header>
+  <div class="container">
+    <h2>Create Message</h2>
+    <form
+      class="form"
+      [formGroup]="createMessageForm"
+      (ngSubmit)="onCreateMessage()"
+    >
+      <div class="form-row">
+        <div class="form-group">
+          <label for="inputEmail4">Title messages</label>
+          <input
+            formControlName="title"
+            type="text"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputPassword4">Messages</label>
+          <input
+            formControlName="text"
+            type="text"
+            class="form-control"
+            id="inputPassword4"
+            placeholder="messagge"
+          />
+        </div>
+      </div>
+      <div class="content-button">
+        <button type="submit" class="btn">Share</button>
+      </div>
+    </form>
+    <div *ngFor="let message of messages">
+      <app-card [message]="message"></app-card>
+    </div>
+  </div>
+</div>

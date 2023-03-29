@@ -1,0 +1,50 @@
+.topnav {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.contentLinks {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  position: fixed;
+  right: 5px;
+}
+
+.topnav #myLinks {
+  display: none;
+  background-color:ghostwhite;
+  border-radius: 6px;
+  width: 230px;
+}
+
+#MyLinks {
+  justify-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a:hover {
+  background-color: #f9fd6d;
+}
+
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+
+}
+

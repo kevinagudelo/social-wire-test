@@ -1,0 +1,58 @@
+<div class="container-login">
+  <div class="body">
+    <div class="container-img-login">
+      <div>
+        <img src="../../../../assets/img/image 2.png" height="40px" alt="" />
+      </div>
+      <img
+        class="img-float-login"
+        width="240px"
+        src="../../../../assets/img/Group 2.png"
+        alt=""
+      />
+      <h1 class="h1-img">Welcome To Wires</h1>
+    </div>
+    <h1>Sign Up</h1>
+    <form class="form" [formGroup]="registerForm" (ngSubmit)="onRegister()">
+      <div>
+        <div>
+          <label for="inputNick">Nickname</label>
+          <input
+            type="text"
+            formControlName="username"
+            id="inputNick"
+            placeholder="Nickname"
+          />
+        </div>
+        <div class="form-group col-xs-12 mb-3">
+          <label for="inputNick">Full Name</label>
+          <input
+            type="text"
+            formControlName="fullname"
+            id="inputNick"
+            placeholder="Nickname"
+          />
+        </div>
+        <div>
+          <label for="inputEmail4">Email</label>
+          <input
+            formControlName="email"
+            type="email"
+            id="inputEmail4"
+            placeholder="Email"
+          />
+        </div>
+        <div>
+          <label for="inputPassword4">Password</label>
+          <input
+            formControlName="password"
+            type="password"
+            id="inputPassword4"
+            placeholder="Password"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </div>
+</div>

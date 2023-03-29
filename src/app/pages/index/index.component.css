@@ -1,0 +1,122 @@
+.content-dark {
+  background-color: #16202a;
+  height: 100%;
+  color: white;
+}
+.first-content {
+  display: flex;
+}
+.second-content {
+  display: flex;
+}
+.content-seccion {
+  padding: 20px;
+}
+.img-head {
+  padding: 20px;
+  width: auto;
+  max-width: 230px;
+}
+
+.media-luna {
+  width: 200px;
+  height: 50px;
+  background-color: #687042;
+  border-top-left-radius: 400px;
+  border-bottom-left-radius: 400px;
+  border-top: 25px solid transparent;
+  border-right: 50px solid #687042;
+  border-bottom: 25px solid transparent;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row img {
+  flex: 0 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.row p {
+  flex: 1 1 auto;
+  margin: 0;
+}
+
+.code-sections {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background: #eeeeee4a;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.platform {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-icon {
+  margin: 20px;
+}
+.btn-icon:hover {
+  background: #eeeeee4a;
+  border-radius: 15px;
+}
+
+.sign-up-btn {
+  color: #16202a;
+  background: #f9fd6d;
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 21px;
+  width: auto;
+}
+
+.login-btn {
+  border: 1px solid #f9fd6d;
+  color: #f9fd6d;
+  background: #16202a;
+  border-radius: 10px;
+  padding: 8px;
+  font-weight: 500;
+  font-size: 21px;
+  width: auto;
+}
+
+.buttons-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+
